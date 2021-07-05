@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    margin: 7px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: .75;
+    text-decoration-style: solid;
+}
+a:hover {
+    text-decoration: underline;
+}
+#signin {
+    background-color: rgb(66, 133, 244);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 2px;
+    border-top: rgb(66, 133, 244);
+    border-bottom: rgb(66, 133, 244);
+    border-left: rgb(66, 133, 244);
+    border-right: rgb(66, 133, 244);
+    padding-block: 7px;
+    padding-inline: 12px;
+    opacity: 100%;
+}
+#signin:hover {
+    cursor: default;
+    text-decoration: none;
+}
+#signin:active {
+    background-color: rgb(50, 121, 236);
+}
+.header-nav {
+   display: flex; 
+   align-items: center;
+   padding: 0 0 0 15px;
+}
