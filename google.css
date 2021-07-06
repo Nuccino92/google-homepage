@@ -5,6 +5,9 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    margin-top: -7px;
+    margin-left: -22px;
+    margin-right: 17px;
 }
 
 a {
@@ -12,7 +15,7 @@ a {
     color: black;
     text-decoration: none;
     font-size: 13px;
-    opacity: .75;
+    opacity: .6;
     text-decoration-style: solid;
 }
 a:hover {
@@ -23,14 +26,10 @@ a:hover {
     color: white;
     font-weight: bolder;
     text-align: center;
-    border-radius: 2px;
-    border-top: rgb(66, 133, 244);
-    border-bottom: rgb(66, 133, 244);
-    border-left: rgb(66, 133, 244);
-    border-right: rgb(66, 133, 244);
     padding-block: 7px;
     padding-inline: 12px;
-    opacity: 100%;
+    opacity: 1;
+    border-radius: 3px;
 }
 #signin:hover {
     cursor: default;
@@ -39,8 +38,32 @@ a:hover {
 #signin:active {
     background-color: rgb(50, 121, 236);
 }
+#apps:hover {
+    opacity: 2;
+}
 .header-nav {
    display: flex; 
    align-items: center;
-   padding: 0 0 0 15px;
+}
+/* The start of the middle section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9%;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    height: 43px;
+    width: 520px;
+    border: 1px solid #dfe1e5;
+    border-radius: 28px;
+}
+.button-container {
+    display: flex;
+    margin-top: 30px;
+    flex-grow: 500px;
 }
