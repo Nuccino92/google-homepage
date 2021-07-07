@@ -61,6 +61,31 @@ section {
     width: 520px;
     border: 1px solid #dfe1e5;
     border-radius: 28px;
+    margin-top: -1px;
+}
+.search-container:hover {
+    box-shadow: 0px 2px 1px 0px rgba(212, 209, 209, 0.801);
+    border-color: honeydew;
+}
+input {
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+}
+#magnify {
+    display: flex;
+    height: 20px;
+    padding-top: 12px;
+    padding-left: 13px;
+    opacity: .38;
+    padding-right: 5px;
+}
+#mic-img {
+    padding-top: 3px;
+    padding-right: 5px;
 }
 .button-container {
     display: flex;
