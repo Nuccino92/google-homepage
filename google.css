@@ -63,6 +63,10 @@ section {
     border-radius: 28px;
     margin-top: -1px;
 }
+.search-container:focus-within {
+    box-shadow: 0px 2px 1px 0px rgba(212, 209, 209, 0.801);
+    border-color: honeydew;
+}
 .search-container:hover {
     box-shadow: 0px 2px 1px 0px rgba(212, 209, 209, 0.801);
     border-color: honeydew;
@@ -71,6 +75,7 @@ input {
     flex-grow: 1;
     border: none;
     font-size: 16px;
+    font-weight: 1;
 }
 input:focus {
     outline: none;
@@ -88,7 +93,22 @@ input:focus {
     padding-right: 5px;
 }
 .button-container {
-    display: flex;
-    margin-top: 30px;
-    flex-grow: 500px;
+    font-size: 14px;
+    padding-top: 34px;
+}
+button {
+    background-color: #f2f2f2;
+    border: none;
+    margin: 11px 4px;
+    cursor: pointer;
+    height: 36px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    opacity: .7;
+}
+button:hover {
+    box-shadow: 0px 0px 2px 0px;
+}
+button:focus {
+    box-shadow: 0px 0px 2px 1px #4d90fe;
 }
