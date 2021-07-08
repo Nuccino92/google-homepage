@@ -45,7 +45,8 @@ a:hover {
    display: flex; 
    align-items: center;
 }
-/* The start of the middle section */
+
+            /* The start of the middle section */
 
 section {
     display: flex;
@@ -58,14 +59,10 @@ section {
     justify-content: space-between;
     margin-top: 36px;
     height: 43px;
-    width: 520px;
+    width: 580px;
     border: 1px solid #dfe1e5;
     border-radius: 28px;
     margin-top: -1px;
-}
-.search-container:focus-within {
-    box-shadow: 0px 2px 1px 0px rgba(212, 209, 209, 0.801);
-    border-color: honeydew;
 }
 .search-container:hover {
     box-shadow: 0px 2px 1px 0px rgba(212, 209, 209, 0.801);
@@ -99,16 +96,61 @@ input:focus {
 button {
     background-color: #f2f2f2;
     border: none;
-    margin: 11px 4px;
+    margin: 2px 11px;
     cursor: pointer;
     height: 36px;
-    padding: 0px 20px;
+    padding: 0px 20x;
     border-radius: 4px;
     opacity: .7;
+    padding-block: 7px;
+    padding-inline: 12px;
 }
 button:hover {
     box-shadow: 0px 0px 2px 0px;
 }
 button:focus {
     box-shadow: 0px 0px 2px 1px #4d90fe;
+}
+             /* Start of the Bottom Nav */
+
+footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 6px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    opacity: 1;
+}
+#left-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4px;
+    font-size: 14px;
+    align-items: center;
+}
+#right-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 9px;
+    font-size: 14px;
+    align-items: center;
+}
+         /* End of Footer, Responsiness Below */
+
+@media (max-width: 600px)  {
+
+    .search-container {
+        width: 97vw;
+    }
+    #footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #left-footer {
+        justify-content: center;
+    }
+    #right-footer {
+        justify-content: center;
+    }
 }
